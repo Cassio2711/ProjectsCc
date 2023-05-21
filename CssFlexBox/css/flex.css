@@ -24,6 +24,16 @@
     /*Se houver overflow, apaerce o scroll*/
 }
 
+
+/*Videos*/
+
+.videos__item {
+    height: 303px;
+    width: 280px;
+}
+
+
+
 /* MENU LATERAL */
 .menu__container {
     position: fixed;
@@ -95,7 +105,7 @@
 
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1440px) {
     .menu__container {
         width: 239px;
         overflow: scroll;
@@ -109,7 +119,8 @@
 
     .menu__lista{
         height: auto;
-        padding: 20px 17px 20px 15px;        
+        padding: 20px 17px 20px 15px; 
+        gap: 20px;       
     }
 
     .menu__lista a {
@@ -118,5 +129,23 @@
         gap: 10px;
     }
 
+    .menu__lista:nth-child(3){
+        flex-direction: column-reverse;
+    }
 
+    .jogos{
+        order: 3;
+    }
+
+    .filmes {
+        order:2;
+    }
+
+    .premium {
+        order:1;
+    }
+
+    .maispagina{
+        order:4;
+    }
 }
