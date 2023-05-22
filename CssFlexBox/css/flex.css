@@ -25,11 +25,19 @@
 }
 
 
-/*Videos*/
+/*LISTA DE VIDEOS*/
+
+.videos__container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
 .videos__item {
     height: 303px;
     width: 280px;
+    flex-grow: 1;
 }
 
 
@@ -63,6 +71,9 @@
 .menu__lista:nth-child(4) {
     display: none;
 }
+
+
+
 
 
 /* RODAPE */
