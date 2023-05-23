@@ -6,8 +6,6 @@ http.send();
 
 http.onload = () =>{
     const data=JSON.parse(http.response);
-    
-
     data.forEach(element => {        
         tabela.appendChild(criaNovaLinha(element.nome,element.email));
     });
