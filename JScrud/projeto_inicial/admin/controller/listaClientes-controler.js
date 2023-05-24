@@ -31,8 +31,7 @@ clienteService.listaClientes()
        let ehBotaoDeletar = event.target.className === 'botao-simples botao-simples--excluir';       
        if(ehBotaoDeletar){
         const linhaCliente = event.target.closest('[data-id]');
-        let id = linhaCliente.dataset.id;  
-        console.log(id);
+        let id = linhaCliente.dataset.id;          
         clienteService.removeCliente(id)
        }
     })
