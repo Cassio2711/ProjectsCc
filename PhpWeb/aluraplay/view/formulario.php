@@ -1,25 +1,4 @@
-<?php 
-    $pdo = new PDO(
-        'mysql:host=localhost;dbname=aluraplay',
-        'root',
-        'lord123'
-    );    
-    $video = [
-        'url'=>'',
-        'titulo'=>'',
-    ];
-        
-    $id = filter_input(INPUT_GET,'id',FILTER_VALIDATE_INT);
-    if($id!==false && $id !== null){
-        $statement = $pdo->prepare('SELECT * FROM videos WHERE id=?;');
-        $statement -> bindValue(1,$id,PDO::PARAM_INT);
-        $statement -> execute();
-        $video = $statement-> fetch(PDO::FETCH_ASSOC);
-    }
-
-?>
-
-<?php include_once 'inicio-html.php'?>
+<?php include_once __DIR__.'/../inicio-html.php'?>
 
     <main class="container">
 

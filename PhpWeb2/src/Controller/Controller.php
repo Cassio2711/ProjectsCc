@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Alura\Mvc\Controller;
+namespace Alura\Mvc\Controller2;
 
-interface Controller
+interface Controllerasdsada
 {
     public function processaRequisicao(): void;
 }

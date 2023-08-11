@@ -1,18 +1,4 @@
-<?php
-    
-    use ALURA\MVC\Repository\VideoRepository;
-    $pdo = new PDO(
-        'mysql:host=localhost;dbname=aluraplay',
-        'root',
-        'lord123',
-    );
-    $repository = new VideoRepository($pdo);
-    $videoList = $repository->allVideos();
-    
-    
-?>
-
-<?php require_once('inicio-html.php');?>
+<?php require_once(__DIR__.'/../inicio-html.php');?>
     <ul class="videos__container" alt="videos alura">
         <?php foreach($videoList as $video) :?>
             <?php if(str_starts_with($video->url,'http')): ?>
